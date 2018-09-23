@@ -1,36 +1,66 @@
+//Int to make the green circle go down
 int circleX=0;
+//Int to make the blue circle go down
 int circleY=-30;
+//Int to make the purple circle go down
 int circleZ=-75;
+//Int to make the red rectangle go down
 int rectX=-24;
+//Int to make the yellow rectangle go down
 int rectY=-53;
+//Int to make the teal rectangle go down
 int rectZ=-63;
 void setup()
 {
+  //Size of the screen
   size(300,300);
 }
 void draw()
 {
+  //Text's fill colour
   fill(0);
+  //Background colour
   background(204,0,102);
+  //Text size
   textSize(25);
+  //Where the text is located||The x-y coordinates are in the center
   textMode(CENTER);
+  //What the text says and where the x-y coordinates are
   text("Let's have a party!",45,150);
+  //Colour of circle 1
   fill(0,255,0);
+  //Circle One and x-y coord
   ellipse(15,circleX,15,15);
+  //Colour of Circle 2
   fill(0,0,225);
+  //Circle 2 and x-y coord
   ellipse(190,circleY,15,15);
+  //Colour of circle 3
   fill(150,24,145);
+  //Circle 3 and x-y coord
   ellipse(140,circleZ,15,15);
+  //Colour of Rect 1
   fill(255,0,0);
-  rect(65,rectX,15,15);
+  //Rect 1 and x-y coord
+  rect(60,rectX,15,15);
+  //Colour of Rect 2
   fill(255,255,0);
+  //Rect 2 and x-y coord
   rect(200,rectY,15,15);
+  //Colour for Rect 3
   fill(0,255,255);
+  //Rect 3 and x-y coord
   rect(240,rectZ,15,15);
+  //To make circle 1 go down
   circleX=circleX+1;
+  //To make circle 2 go down
   circleY=circleY+1;
+  //To make circle 3 go down
   circleZ=circleZ+1;
+  //To make Rect 1 go down
   rectX=rectX+1;
+  //To make Rect 2 go down
   rectY=rectY+1;
+  //To make Rect 3 go down
   rectZ=rectZ+1;
 }
