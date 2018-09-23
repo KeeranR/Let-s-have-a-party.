@@ -1,0 +1,36 @@
+int circleX=0;
+int circleY=-30;
+int circleZ=-75;
+int rectX=-24;
+int rectY=-53;
+int rectZ=-63;
+void setup()
+{
+  size(300,300);
+}
+void draw()
+{
+  fill(0);
+  background(204,0,102);
+  textSize(25);
+  textMode(CENTER);
+  text("Let's have a party!",45,150);
+  fill(0,255,0);
+  ellipse(15,circleX,15,15);
+  fill(0,0,225);
+  ellipse(190,circleY,15,15);
+  fill(150,24,145);
+  ellipse(140,circleZ,15,15);
+  fill(255,0,0);
+  rect(65,rectX,15,15);
+  fill(255,255,0);
+  rect(200,rectY,15,15);
+  fill(0,255,255);
+  rect(240,rectZ,15,15);
+  circleX=circleX+1;
+  circleY=circleY+1;
+  circleZ=circleZ+1;
+  rectX=rectX+1;
+  rectY=rectY+1;
+  rectZ=rectZ+1;
+}
